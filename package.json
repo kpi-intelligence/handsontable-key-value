@@ -1,0 +1,33 @@
+{
+  "name": "handsontable-key-value",
+  "version": "0.0.0",
+  "description": "Handstontable plugin to handle key-value pair data type.",
+  "main": "commonjs/index.js",
+  "scripts": {
+    "clean": "rimraf commonjs",
+    "lint": "eslint src/",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "BABEL_ENV=commonjs_dist babel src --out-dir commonjs"
+  },
+  "author": "François Voron",
+  "license": "MIT",
+  "devDependencies": {
+    "@babel/cli": "^7.2.3",
+    "@babel/core": "^7.3.3",
+    "@babel/plugin-proposal-object-rest-spread": "^7.3.2",
+    "@babel/polyfill": "^7.2.5",
+    "@babel/preset-env": "^7.3.1",
+    "@babel/register": "^7.0.0",
+    "babel-eslint": "^10.0.1",
+    "babel-plugin-transform-inline-environment-variables": "^0.4.3",
+    "babel-plugin-transform-require-ignore": "^0.1.1",
+    "eslint": "^5.14.0",
+    "eslint-config-airbnb-base": "^13.1.0",
+    "eslint-plugin-import": "^2.16.0",
+    "handsontable": "^6.2.2",
+    "rimraf": "^2.6.3"
+  },
+  "peerDependencies": {
+    "handsontable": "^6.2.2"
+  }
+}
