@@ -1,6 +1,6 @@
 {
   "name": "handsontable-key-value",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "description": "Handstontable plugin to handle key-value pair data type.",
   "main": "commonjs/index.js",
   "module": "es/index.js",
