@@ -1,5 +1,7 @@
 # handsontable-key-value
 
+![](https://img.shields.io/npm/v/handsontable-key-value.svg?style=flat)
+
 Handsontable plugin allowing to have a key-value pair as a data type. It's built upon the builtin `autocomplete` feature with some small tweaks to make it work with such use-case.
 
 ## Installation

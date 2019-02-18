@@ -2,6 +2,10 @@
   "name": "handsontable-key-value",
   "version": "1.0.0",
   "description": "Handstontable plugin to handle key-value pair data type.",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/frankie567/handsontable-key-value.git"
+  },
   "main": "commonjs/index.js",
   "module": "es/index.js",
   "scripts": {
