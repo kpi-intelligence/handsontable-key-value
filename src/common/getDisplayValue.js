@@ -10,7 +10,7 @@ import getSourceItem from './getSourceItem';
  * @param {Function} callback Callback called when the value lookup is done.
  */
 function getDisplayValue(source, keyProperty, valueProperty, keyValue, callback) {
-  getSourceItem(source, keyProperty, keyValue, (item) => {
+  getSourceItem.call(this, source, keyProperty, keyValue, (item) => {
     callback(item ? item[valueProperty] : null);
   });
 }

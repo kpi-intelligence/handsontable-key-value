@@ -22,7 +22,8 @@ class KeyValueEditor extends Handsontable.editors.AutocompleteEditor {
     if (this.state === 'STATE_EDITING') {
       const columnSettings = this.instance.getSettings().columns[this.col];
 
-      getDisplayValue(
+      getDisplayValue.call(
+        this.cellProperties,
         columnSettings.source,
         columnSettings.keyProperty,
         columnSettings.valueProperty,

@@ -28,7 +28,7 @@ function _getSourceItem(items, keyProperty, keyValue) {
  */
 function getSourceItem(source, keyProperty, keyValue, callback) {
   if (typeof source === 'function') {
-    source(null, (items) => {
+    source.call(this, null, (items) => {
       callback(_getSourceItem(items, keyProperty, keyValue));
     });
   } else if (Array.isArray(source)) {

@@ -16,7 +16,8 @@ import { getDisplayValue } from '../common';
 function keyValueRenderer(instance, td, row, col, prop, value, cellProperties) {
   const columnSettings = instance.getSettings().columns[col];
 
-  getDisplayValue(
+  getDisplayValue.call(
+    cellProperties,
     columnSettings.source,
     columnSettings.keyProperty,
     columnSettings.valueProperty,
