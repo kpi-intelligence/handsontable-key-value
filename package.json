@@ -4,7 +4,7 @@
   "description": "Handstontable plugin to handle key-value pair data type.",
   "repository": {
     "type": "git",
-    "url": "https://github.com/frankie567/handsontable-key-value.git"
+    "url": "https://github.com/kpi-intelligence/handsontable-key-value.git"
   },
   "main": "commonjs/index.js",
   "module": "es/index.js",
@@ -17,7 +17,7 @@
     "build:es": "BABEL_ENV=es babel src --out-dir es",
     "prepublish": "npm run build"
   },
-  "author": "François Voron",
+  "author": "KPI Intelligence",
   "license": "MIT",
   "devDependencies": {
     "@babel/cli": "^7.2.3",

@@ -93,4 +93,4 @@ const settings = {
 ## Limitations
 
 * The sort is done on the **underlying value**, not the displayed one (unless you provide a custom compare function).
-* The `filters` plugin (Pro) will still display the underlying value in the filters dropdown list. This is something I'm looking into.
+* The `filters` plugin (Pro) will still display the underlying value in the filters dropdown list. This is something we're working on.
