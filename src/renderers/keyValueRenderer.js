@@ -14,7 +14,8 @@ import { getDisplayValue } from '../common';
  * @param {Object} cellProperties Currently processed cell properties object, containing the cell's metadata.
  */
 function keyValueRenderer(instance, td, row, col, prop, value, cellProperties) {
-  const columnSettings = instance.getSettings().columns[col];
+  const colIndex = instance.toPhysicalColumn(col);
+  const columnSettings = instance.getSettings().columns[colIndex];
 
   getDisplayValue.call(
     cellProperties,
