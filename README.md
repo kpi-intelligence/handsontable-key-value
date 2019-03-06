@@ -12,6 +12,17 @@ npm i handsontable-key-value
 
 ## Usage
 
+### Register the plugin
+
+```js
+import Handsontable from 'handsontable'
+import handsontableKeyValue from 'handsontable-key-value';
+
+handsontableKeyValue(Handsontable);
+```
+
+### Usage
+
 Use it as a column type and provide the required settings:
 
 ```js
