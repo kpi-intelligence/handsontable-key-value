@@ -1,6 +1,6 @@
 {
   "name": "handsontable-key-value",
-  "version": "1.0.3",
+  "version": "2.0.0",
   "description": "Handstontable plugin to handle key-value pair data type.",
   "repository": {
     "type": "git",
