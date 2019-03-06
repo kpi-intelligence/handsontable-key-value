@@ -1,6 +1,6 @@
 # handsontable-key-value
 
-![](https://img.shields.io/npm/v/handsontable-key-value.svg?style=flat)
+[![](https://img.shields.io/npm/v/handsontable-key-value.svg?style=flat)](https://www.npmjs.com/package/handsontable-key-value)
 
 Handsontable plugin allowing to have a key-value pair as a data type. It's built upon the builtin `autocomplete` feature with some small tweaks to make it work with such use-case.
 
@@ -11,20 +11,6 @@ npm i handsontable-key-value
 ```
 
 ## Usage
-
-### Register the plugin
-
-In order to be compatible with both `handsontable` and `handsontable-pro` packages, the registration is not done automatically. You have to call the provided setup function yourself:
-
-```js
-import * as Handsontable from 'handsontable'
-// import * as Handsontable from 'handsontable-pro'
-import handsontableKeyValue from 'handsontable-key-value';
-
-handsontableKeyValue(Handsontable);
-```
-
-### Usage
 
 Use it as a column type and provide the required settings:
 
