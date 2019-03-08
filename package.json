@@ -36,5 +36,8 @@
   },
   "peerDependencies": {
     "handsontable": "^7.0.0"
+  },
+  "dependencies": {
+    "lodash.deburr": "^4.1.0"
   }
 }

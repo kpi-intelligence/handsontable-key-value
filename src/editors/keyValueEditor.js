@@ -129,4 +129,6 @@ class KeyValueEditor extends Handsontable.editors.AutocompleteEditor {
 
 }
 
+Handsontable.editors.registerEditor('key-value', KeyValueEditor);
+
 export default KeyValueEditor;

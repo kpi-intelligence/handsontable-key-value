@@ -33,4 +33,6 @@ function keyValueRenderer(instance, td, row, col, prop, value, cellProperties) {
 
 }
 
+Handsontable.renderers.registerRenderer('key-value', keyValueRenderer);
+
 export default keyValueRenderer;

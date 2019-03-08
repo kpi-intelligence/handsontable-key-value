@@ -1,3 +1,5 @@
+import getSourceItems from './getSourceItems';
+
 /**
  * Returns the item corresponding to a key from a list of items.
  *
@@ -27,15 +29,13 @@ function _getSourceItem(items, keyProperty, keyValue) {
  * @param {Function} callback Callback called when the item lookup is done.
  */
 function getSourceItem(source, keyProperty, keyValue, callback) {
-  if (typeof source === 'function') {
-    source.call(this, null, (items) => {
+  getSourceItems.call(this, source, (items) => {
+    if (items) {
       callback(_getSourceItem(items, keyProperty, keyValue));
-    });
-  } else if (Array.isArray(source)) {
-    callback(_getSourceItem(source, keyProperty, keyValue));
-  } else {
-    callback(null);
-  }
+    } else {
+      callback(null);
+    }
+  });
 }
 
 export default getSourceItem;

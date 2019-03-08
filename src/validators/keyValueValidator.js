@@ -1,4 +1,7 @@
+import Handsontable from 'handsontable';
+
 import { getSourceItem } from '../common';
+
 /**
  * Key-value pair validator.
  *
@@ -14,5 +17,7 @@ function keyValueValidator(value, callback) {
     item => (item ? callback(true) : callback(false)),
   );
 }
+
+Handsontable.validators.registerValidator('key-value', keyValueValidator);
 
 export default keyValueValidator;

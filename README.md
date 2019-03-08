@@ -12,20 +12,11 @@ npm i handsontable-key-value
 
 ## Usage
 
-### Register the plugin
-
-```js
-import Handsontable from 'handsontable'
-import handsontableKeyValue from 'handsontable-key-value';
-
-handsontableKeyValue(Handsontable);
-```
-
-### Usage
-
 Use it as a column type and provide the required settings:
 
 ```js
+import 'handsontable-key-value' // Import the module to register the extensions
+
 const settings = {
   columns: [
     {
@@ -87,7 +78,19 @@ const settings = {
 };
 ```
 
+### Filters
+
+We also provide a custom implementation of the [Filters plugin](https://handsontable.com/docs/latest/demo-filtering.html) that works with key-value columns. Enable it in your settings:
+
+```js
+const settings = {
+  // filters: true <-- Remember to disable the official filters plugin
+  filtersKeyValue: true,
+}
+```
+
+All the options provided by the official plugin are available.
+
 ## Limitations
 
 * The sort is done on the **underlying value**, not the displayed one (unless you provide a custom compare function).
-* The `filters` plugin (Pro) will still display the underlying value in the filters dropdown list. This is something we're working on.
