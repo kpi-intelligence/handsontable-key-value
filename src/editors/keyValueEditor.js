@@ -30,7 +30,7 @@ class KeyValueEditor extends Handsontable.editors.AutocompleteEditor {
         columnSettings.valueProperty,
         value,
         (displayValue) => {
-          super.setValue.apply(this, [displayValue || value]);
+          super.setValue.apply(this, [displayValue !== null ? displayValue : value]);
         },
       );
     }

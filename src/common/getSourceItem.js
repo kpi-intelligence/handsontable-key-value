@@ -12,8 +12,19 @@ import getSourceItems from './getSourceItems';
 function _getSourceItem(items, keyProperty, keyValue) {
   const sourceItem = items.find((item) => {
     const key = item[keyProperty];
-    // If the item key is a number, cast the keyValue to a number
-    const castedKeyValue = typeof key === 'number' ? Number(keyValue) : keyValue;
+
+    let castedKeyValue = keyValue;
+
+    // HoT will sometimes cast the value to string,
+    // so we have to cast it to original type for comparison
+    if (typeof castedKeyValue !== typeof key) {
+      if (typeof key === 'number') {
+        castedKeyValue = Number(keyValue);
+      } else if (typeof key === 'boolean') {
+        castedKeyValue = keyValue === 'true';
+      }
+    }
+
     return key === castedKeyValue;
   });
 

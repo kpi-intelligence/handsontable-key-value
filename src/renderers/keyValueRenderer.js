@@ -26,7 +26,7 @@ function keyValueRenderer(instance, td, row, col, prop, value, cellProperties) {
     (displayValue) => {
       Handsontable.renderers.getRenderer('dropdown').apply(
         this,
-        [instance, td, row, col, prop, displayValue || value, cellProperties],
+        [instance, td, row, col, prop, displayValue !== null ? displayValue : value, cellProperties],
       );
     },
   );
