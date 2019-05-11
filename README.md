@@ -4,6 +4,8 @@
 
 Handsontable plugin allowing to have a key-value pair as a data type. It's built upon the builtin `autocomplete` feature with some small tweaks to make it work with such use-case.
 
+## [Demo](https://stackblitz.com/edit/handsontable-key-value-demo)
+
 ## Installation
 
 ```bash
