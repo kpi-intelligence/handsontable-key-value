@@ -14,6 +14,7 @@ dev*.html
 npm-debug.log
 
 !dist/README.md
+demo/dist/*.js
 node_modules/
 commonjs/
 es/
