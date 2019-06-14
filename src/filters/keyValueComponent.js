@@ -27,6 +27,13 @@ class KeyValueComponent extends ValueComponent {
   }
 
   /**
+   * Bypass this function as it was causing issue #3.
+   * From what I understand, this method is needed to update the proposed values when the user inputs something new in the table.
+   * In the key-value case, this is not really needed (the available values never change).
+   */
+  updateState() {}
+
+  /**
    * Asynchronous version of the parent method.
    */
   reset() {
