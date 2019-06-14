@@ -12,9 +12,6 @@ webpack.config.js
 !test/
 node_modules/
 
-# this directories are necessary for build PRO package
-#demo/
-#src/
-#lib/
-#test/
-#tasks/
+demo/
+src/
+test/
