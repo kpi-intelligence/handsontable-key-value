@@ -15,7 +15,7 @@
     "build": "npm run clean && npm run build:commonjs && npm run build:es",
     "build:commonjs": "BABEL_ENV=commonjs_dist babel src --out-dir commonjs",
     "build:es": "BABEL_ENV=es babel src --out-dir es",
-    "prepublish": "npm run build"
+    "prepare": "npm run build"
   },
   "author": "KPI Intelligence",
   "license": "MIT",
