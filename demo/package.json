@@ -1,0 +1,23 @@
+{
+  "name": "handsontable-key-value-demo",
+  "version": "0.0.0",
+  "description": "",
+  "private": true,
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack",
+    "build:watch": "webpack --watch"
+  },
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "handsontable": "^7.1.0",
+    "handsontable-key-value": "^3.0.1"
+  },
+  "devDependencies": {
+    "css-loader": "^3.0.0",
+    "style-loader": "^0.23.1",
+    "webpack": "^4.34.0",
+    "webpack-cli": "^3.3.4"
+  }
+}
