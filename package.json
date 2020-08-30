@@ -1,6 +1,6 @@
 {
   "name": "handsontable-key-value",
-  "version": "3.0.2",
+  "version": "3.0.3",
   "description": "Handstontable plugin to handle key-value pair data type.",
   "repository": {
     "type": "git",
@@ -35,7 +35,7 @@
     "rimraf": "^2.6.3"
   },
   "peerDependencies": {
-    "handsontable": "^7.0.0"
+    "handsontable": ">=7.0.0"
   },
   "dependencies": {
     "lodash.deburr": "^4.1.0"
